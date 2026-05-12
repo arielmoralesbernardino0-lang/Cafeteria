@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cafeteria>
-    
+
+<cafeteria
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="esquema.xml">
+
     <informacion>
         <nombre>Café Aroma</nombre>
         <direccion>Toluca, Estado de México</direccion>
@@ -8,7 +11,7 @@
     </informacion>
 
     <menu>
-        
+
         <bebida>
             <id>B001</id>
             <nombre>Capuchino</nombre>
@@ -38,7 +41,7 @@
     </menu>
 
     <empleados>
-        
+
         <empleado>
             <id>E001</id>
             <nombre>Ana López</nombre>
