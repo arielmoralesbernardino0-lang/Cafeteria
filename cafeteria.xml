@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cafeteria>
+    
+    <informacion>
+        <nombre>Café Aroma</nombre>
+        <direccion>Toluca, Estado de México</direccion>
+        <telefono>7221234567</telefono>
+    </informacion>
+
+    <menu>
+        
+        <bebida>
+            <id>B001</id>
+            <nombre>Capuchino</nombre>
+            <tamano>Grande</tamano>
+            <precio>65</precio>
+        </bebida>
+
+        <bebida>
+            <id>B002</id>
+            <nombre>Latte</nombre>
+            <tamano>Mediano</tamano>
+            <precio>58</precio>
+        </bebida>
+
+        <postre>
+            <id>P001</id>
+            <nombre>Cheesecake</nombre>
+            <precio>70</precio>
+        </postre>
+
+        <postre>
+            <id>P002</id>
+            <nombre>Brownie</nombre>
+            <precio>45</precio>
+        </postre>
+
+    </menu>
+
+    <empleados>
+        
+        <empleado>
+            <id>E001</id>
+            <nombre>Ana López</nombre>
+            <puesto>Barista</puesto>
+        </empleado>
+
+        <empleado>
+            <id>E002</id>
+            <nombre>Carlos Martínez</nombre>
+            <puesto>Cajero</puesto>
+        </empleado>
+
+    </empleados>
+
+</cafeteria>
