@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="cafeteria">
+        <xs:complexType>
+            <xs:sequence>
+
+                <!-- Información -->
+                <xs:element name="informacion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="direccion" type="xs:string"/>
+                            <xs:element name="telefono" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Menú -->
+                <xs:element name="menu">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="bebida" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="id" type="xs:string"/>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="tamano" type="xs:string"/>
+                                        <xs:element name="precio" type="xs:decimal"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="postre" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="id" type="xs:string"/>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="precio" type="xs:decimal"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Empleados -->
+                <xs:element name="empleados">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="empleado" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="id" type="xs:string"/>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="puesto" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
